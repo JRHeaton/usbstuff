@@ -7,36 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52080D1718A8511B00725AB5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5276792118A70C290043749E /* CoreFoundation.framework */; };
+		52080D1A18A8511B00725AB5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 52080D1918A8511B00725AB5 /* main.c */; };
+		52080D2618A8870200725AB5 /* MIDIClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52080D2018A8870200725AB5 /* MIDIClient.cpp */; };
+		52080D2718A8870200725AB5 /* MIDIMsgHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52080D2218A8870200725AB5 /* MIDIMsgHandler.cpp */; };
+		52080D2818A8870200725AB5 /* PushClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52080D2418A8870200725AB5 /* PushClient.cpp */; };
+		52080D2A18A8876800725AB5 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52080D2918A8876800725AB5 /* CoreMIDI.framework */; };
+		52080D2B18A8877300725AB5 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52080D2918A8876800725AB5 /* CoreMIDI.framework */; };
 		5276792218A70C290043749E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5276792118A70C290043749E /* CoreFoundation.framework */; };
-		5276792518A70C290043749E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5276792418A70C290043749E /* main.c */; };
-		5276792718A70C290043749E /* usbstuff.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5276792618A70C290043749E /* usbstuff.1 */; };
+		5276792518A70C290043749E /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5276792418A70C290043749E /* main.cc */; };
+		5276792E18A70C370043749E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5276792D18A70C370043749E /* IOKit.framework */; };
+		52E6E61218A80355001E03E1 /* JR360Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52E6E61018A80355001E03E1 /* JR360Controller.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		52080D1418A8511B00725AB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		5276791C18A70C290043749E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				5276792718A70C290043749E /* usbstuff.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52080D1618A8511B00725AB5 /* usblisten */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = usblisten; sourceTree = BUILT_PRODUCTS_DIR; };
+		52080D1918A8511B00725AB5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		52080D2018A8870200725AB5 /* MIDIClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIClient.cpp; sourceTree = "<group>"; };
+		52080D2118A8870200725AB5 /* MIDIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIClient.h; sourceTree = "<group>"; };
+		52080D2218A8870200725AB5 /* MIDIMsgHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIMsgHandler.cpp; sourceTree = "<group>"; };
+		52080D2318A8870200725AB5 /* MIDIMsgHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIMsgHandler.h; sourceTree = "<group>"; };
+		52080D2418A8870200725AB5 /* PushClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PushClient.cpp; sourceTree = "<group>"; };
+		52080D2518A8870200725AB5 /* PushClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushClient.h; sourceTree = "<group>"; };
+		52080D2918A8876800725AB5 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		5276791E18A70C290043749E /* usbstuff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = usbstuff; sourceTree = BUILT_PRODUCTS_DIR; };
 		5276792118A70C290043749E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		5276792418A70C290043749E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		5276792618A70C290043749E /* usbstuff.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = usbstuff.1; sourceTree = "<group>"; };
+		5276792418A70C290043749E /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		5276792D18A70C370043749E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		52E6E61018A80355001E03E1 /* JR360Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JR360Controller.cpp; sourceTree = "<group>"; };
+		52E6E61118A80355001E03E1 /* JR360Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JR360Controller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		52080D1318A8511B00725AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52080D2A18A8876800725AB5 /* CoreMIDI.framework in Frameworks */,
+				52080D1718A8511B00725AB5 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5276791B18A70C290043749E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52080D2B18A8877300725AB5 /* CoreMIDI.framework in Frameworks */,
+				5276792E18A70C370043749E /* IOKit.framework in Frameworks */,
 				5276792218A70C290043749E /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,10 +82,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52080D1818A8511B00725AB5 /* usblisten */ = {
+			isa = PBXGroup;
+			children = (
+				52080D1918A8511B00725AB5 /* main.c */,
+			);
+			path = usblisten;
+			sourceTree = "<group>";
+		};
 		5276791518A70C290043749E = {
 			isa = PBXGroup;
 			children = (
 				5276792318A70C290043749E /* usbstuff */,
+				52080D1818A8511B00725AB5 /* usblisten */,
 				5276792018A70C290043749E /* Frameworks */,
 				5276791F18A70C290043749E /* Products */,
 			);
@@ -57,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5276791E18A70C290043749E /* usbstuff */,
+				52080D1618A8511B00725AB5 /* usblisten */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +112,8 @@
 		5276792018A70C290043749E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52080D2918A8876800725AB5 /* CoreMIDI.framework */,
+				5276792D18A70C370043749E /* IOKit.framework */,
 				5276792118A70C290043749E /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -72,8 +122,15 @@
 		5276792318A70C290043749E /* usbstuff */ = {
 			isa = PBXGroup;
 			children = (
-				5276792418A70C290043749E /* main.c */,
-				5276792618A70C290043749E /* usbstuff.1 */,
+				5276792418A70C290043749E /* main.cc */,
+				52E6E61018A80355001E03E1 /* JR360Controller.cpp */,
+				52E6E61118A80355001E03E1 /* JR360Controller.h */,
+				52080D2018A8870200725AB5 /* MIDIClient.cpp */,
+				52080D2118A8870200725AB5 /* MIDIClient.h */,
+				52080D2218A8870200725AB5 /* MIDIMsgHandler.cpp */,
+				52080D2318A8870200725AB5 /* MIDIMsgHandler.h */,
+				52080D2418A8870200725AB5 /* PushClient.cpp */,
+				52080D2518A8870200725AB5 /* PushClient.h */,
 			);
 			path = usbstuff;
 			sourceTree = "<group>";
@@ -81,6 +138,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		52080D1518A8511B00725AB5 /* usblisten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52080D1F18A8511B00725AB5 /* Build configuration list for PBXNativeTarget "usblisten" */;
+			buildPhases = (
+				52080D1218A8511B00725AB5 /* Sources */,
+				52080D1318A8511B00725AB5 /* Frameworks */,
+				52080D1418A8511B00725AB5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = usblisten;
+			productName = usblisten;
+			productReference = 52080D1618A8511B00725AB5 /* usblisten */;
+			productType = "com.apple.product-type.tool";
+		};
 		5276791D18A70C290043749E /* usbstuff */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5276792A18A70C290043749E /* Build configuration list for PBXNativeTarget "usbstuff" */;
@@ -120,22 +194,53 @@
 			projectRoot = "";
 			targets = (
 				5276791D18A70C290043749E /* usbstuff */,
+				52080D1518A8511B00725AB5 /* usblisten */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		52080D1218A8511B00725AB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52080D1A18A8511B00725AB5 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5276791A18A70C290043749E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5276792518A70C290043749E /* main.c in Sources */,
+				52080D2818A8870200725AB5 /* PushClient.cpp in Sources */,
+				5276792518A70C290043749E /* main.cc in Sources */,
+				52E6E61218A80355001E03E1 /* JR360Controller.cpp in Sources */,
+				52080D2618A8870200725AB5 /* MIDIClient.cpp in Sources */,
+				52080D2718A8870200725AB5 /* MIDIMsgHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		52080D1D18A8511B00725AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52080D1E18A8511B00725AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5276792818A70C290043749E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -207,6 +312,9 @@
 		5276792B18A70C290043749E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
+				INSTALL_PATH = /Users/John/bin/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +322,9 @@
 		5276792C18A70C290043749E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
+				INSTALL_PATH = /Users/John/bin/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -221,6 +332,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52080D1F18A8511B00725AB5 /* Build configuration list for PBXNativeTarget "usblisten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52080D1D18A8511B00725AB5 /* Debug */,
+				52080D1E18A8511B00725AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5276791918A70C290043749E /* Build configuration list for PBXProject "usbstuff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -237,6 +357,7 @@
 				5276792C18A70C290043749E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
